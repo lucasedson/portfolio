@@ -9,7 +9,7 @@ export default defineConfig({
   exportTrailingSlash: true,
 
   // site: 'http://127.0.0.1:5500',
-
+  site: 'https://lucasedson.github.io/portfolio',
   base: '/portfolio/dist/',
 
 });
