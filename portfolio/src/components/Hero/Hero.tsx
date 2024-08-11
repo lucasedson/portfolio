@@ -6,8 +6,8 @@ export default function Hero() {
             <div className="ml-100 mr-100 mt-20 flex flex-col items-center max-w-5xl gap-28 md:flex-row ">
                 
                 <div className="flex flex-col  items-center w-[300px]">
-                    <div className="flex items-center mb-10 shadow-2xl">
-                        <img className="rounded-full" src="https://github.com/lucasedson.png" />
+                    <div className="flex items-center mb-10">
+                        <img className="rounded-full shadow-slate-700 shadow-sm hover:scale-105 transition-all duration-300" src="https://github.com/lucasedson.png" />
                     </div>
                      <h1 className="text-3xl font-bold">Lucas Edson</h1>
 

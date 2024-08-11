@@ -6,7 +6,7 @@ export default function Home() {
         <div className="auraThingy">
             <Hero />
 
-            <Projetos />
+
 
         <style>{`
 

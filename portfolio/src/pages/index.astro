@@ -1,12 +1,15 @@
 ---
+
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import React from 'react';
 import Home from '../pages/index';
+import Projetos from '../components/Projetos';
 ---
 
 <Layout title="Lucas Edson - Portfolio" >
 	<Home/>
+	<Projetos client:load/>
 </Layout>
 
 <style>
