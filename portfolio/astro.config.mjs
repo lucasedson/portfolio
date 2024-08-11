@@ -7,7 +7,9 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [ tailwind(), react(),],
 
-  base: 'portfolio',
+  site: 'https://lucasedson.github.io',
+
+  base: '/portfolio/',
   outDir: 'public',
   publicDir: 'static',
 });
