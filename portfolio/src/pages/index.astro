@@ -5,11 +5,13 @@ import Card from '../components/Card.astro';
 import React from 'react';
 import Home from '../pages/index';
 import Projetos from '../components/Projetos';
+import Blog from '../components/Blog';
 ---
 
 <Layout title="Lucas Edson - Portfolio" >
 	<Home/>
 	<Projetos client:load/>
+	<Blog></Blog>
 </Layout>
 
 <style>
