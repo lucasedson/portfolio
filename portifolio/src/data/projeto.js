@@ -1,0 +1,47 @@
+export const projetosData = [
+  {
+    "id": 1,
+    "nome": "Saas Praieiro Digital",
+    "descricao": "Desenvolvimento completo do Praieiro Digital, plataforma para gestão de quiosques e barracas de praia. Implementação fullstack utilizando Django, PostgreSQL e Tailwind CSS. Configuração da infraestrutura em nuvem e estratégias de DevOps para escalabilidade. Integração de funcionalidades como gerenciamento de planos, controle financeiro e dashboards.",
+    "tecnologias": ["Django", "PostgreSQL", "Tailwind CSS", "AWS", "DevOps"],
+    "url": "https://praieiro.com.br",
+    "imagem": "/images/praieiro-digital.png", 
+    "periodo": "01/2025 - Atual"
+  },
+
+  {
+    "id": 3,
+    "nome": "Aplicativo Simple-Port-Scanner",
+    "descricao": "Ferramenta desenvolvida em Golang para análise e detecção de portas abertas em redes, compatível com Windows, Linux, MacOS e Android.",
+    "tecnologias": ["Golang", "Windows", "Linux", "MacOS", "Android"],
+    "url": "https://github.com/lucasedson/simple-port-scanner",
+    "imagem": "/images/simple-port-scanner.png"
+  },
+  {
+    "id": 4,
+    "nome": "Encurtador de Link (Backend)",
+    "descricao": "API REST desenvolvida em Golang para encurtamento de URLs.",
+    "tecnologias": ["Golang", "API REST"],
+    "url": "https://github.com/lucasedson/go-shortener-link",
+    "imagem": "/images/go-shortener-link.png"
+  },
+  {
+    "id": 5,
+    "nome": "API - PDV (Frente de Caixa)",
+    "descricao": "Projeto de conclusão do curso na Cubos Academy, uma API robusta para um sistema de Ponto de Venda (PDV), desenvolvida com Node.js e PostgreSQL.",
+    "tecnologias": ["Node.js", "PostgreSQL"],
+    "url": "https://github.com/Alexnderp/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t08",
+    "imagem": "/images/api-pdv.png", 
+    "periodo": "11/2023 - 12/2023"
+  },
+  {
+    "id": 6,
+    "nome": "Website - HJ Consultoria",
+    "descricao": "Desenvolvimento de uma landing page estática utilizando Next.js e Tailwind CSS, garantindo desempenho otimizado e experiência fluida para os usuários.",
+    "tecnologias": ["Next.js", "Tailwind CSS"],
+    "url": "https://hjconsultoria.com",
+    "imagem": "/images/hj-consultoria.png", 
+    "periodo": "02/2024 - 03/2024"
+  }
+
+]

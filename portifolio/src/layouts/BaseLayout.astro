@@ -1,0 +1,55 @@
+---
+import '../styles/global.css'; // Opcional, para estilos globais não cobertos pelo Tailwind
+
+interface Props {
+	title: string;
+  description?: string; // Adicionando meta description
+}
+
+const { title, description = "Portfólio de Lucas Edson, Desenvolvedor Full Stack." } = Astro.props; // [cite: 1]
+---
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" /> {/* Crie um favicon */}
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+    {/* Google Fonts - Exemplo (Opcional) */}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      /* Exemplo de como usar as fontes importadas com Tailwind */
+      /* Adicione 'font-sans' ou 'font-mono' às suas classes do Tailwind */
+      /* Ou defina no tailwind.config.mjs */
+    </style>
+	</head>
+	<body class="bg-slate-50 text-slate-800 font-sans"> {/* Exemplo de fonte padrão */}
+		<header class="bg-blue-700 text-white sticky top-0 z-50 shadow-lg">
+			<nav class="container mx-auto flex flex-wrap justify-between items-center p-4">
+				<a href="/" class="text-2xl font-bold hover:opacity-80 transition-opacity">LUCAS EDSON</a> 
+				<div class="space-x-4 text-sm md:text-base">
+					<a href="/#sobre" class="hover:underline">Sobre Mim</a>
+					<a href="/#projetos" class="hover:underline">Projetos</a>
+					<a href="/#contato" class="hover:underline">Contato</a>
+				</div>
+			</nav>
+		</header>
+		<main class="container mx-auto p-4 md:p-8">
+			<slot /> {/* Conteúdo da página será inserido aqui */}
+		</main>
+		<footer class="text-center p-6 mt-12 bg-slate-200 text-slate-600 text-sm">
+			<p>&copy; {new Date().getFullYear()} Lucas Edson Marins. Todos os direitos reservados.</p> {/* [cite: 1] */}
+      <p class="mt-1">
+        Feito com <a href="https://astro.build/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Astro</a>,
+        <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">React</a> e
+        <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Tailwind CSS</a>.
+      </p>
+		</footer>
+	</body>
+</html>
