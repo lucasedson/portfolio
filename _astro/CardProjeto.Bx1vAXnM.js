@@ -1,9 +1,0 @@
-import"./index.9MVAkNgL.js";var d={exports:{}},a={};/**
- * @license React
- * react-jsx-runtime.production.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var u;function m(){if(u)return a;u=1;var n=Symbol.for("react.transitional.element"),x=Symbol.for("react.fragment");function l(o,e,t){var s=null;if(t!==void 0&&(s=""+t),e.key!==void 0&&(s=""+e.key),"key"in e){t={};for(var i in e)i!=="key"&&(t[i]=e[i])}else t=e;return e=t.ref,{$$typeof:n,type:o,key:s,ref:e!==void 0?e:null,props:t}}return a.Fragment=x,a.jsx=l,a.jsxs=l,a}var c;function f(){return c||(c=1,d.exports=m()),d.exports}var r=f();function p({nome:n,descricao:x,tecnologias:l,url:o,imagem:e,periodo:t}){return r.jsxs("div",{className:"bg-white rounded-lg shadow-xl overflow-hidden flex flex-col h-full transform transition-all hover:scale-105 duration-300 ease-in-out",children:[e&&r.jsx("img",{src:e,alt:`Imagem do projeto ${n}`,className:"w-full h-48 object-cover",loading:"lazy"}),r.jsxs("div",{className:"p-6 flex flex-col flex-grow",children:[r.jsx("h3",{className:"text-2xl font-semibold mb-2 text-blue-700",children:n}),t&&r.jsx("p",{className:"text-xs text-gray-500 mb-2 italic",children:t}),r.jsx("p",{className:"text-gray-700 mb-4 text-sm flex-grow",children:x}),r.jsxs("div",{className:"mb-4",children:[r.jsx("h4",{className:"font-semibold mb-1 text-gray-600 text-xs",children:"Tecnologias:"}),r.jsx("div",{className:"flex flex-wrap gap-2",children:l&&l.map(s=>r.jsx("span",{className:"bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full",children:s},s))})]}),o&&r.jsx("a",{href:o,target:"_blank",rel:"noopener noreferrer",className:"mt-auto inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-colors text-sm self-start",children:"Acessar Projeto"})]})]})}export{p as default};
