@@ -3,7 +3,7 @@ export const projetosData = [
     "id": 0,
     "nome": "Avali.AI – Arquitetura de Solução em Nuvem (TCC – Escola da Nuvem)",
     "descricao": "Arquitetura de uma solução em nuvem na AWS para o Avali.AI, uma plataforma inteligente voltada para a criação, aplicação e correção automatizada de avaliações escolares. O projeto envolveu o levantamento de requisitos funcionais e não funcionais, definição de serviços AWS adequados e aplicação de boas práticas de segurança, escalabilidade e custo-benefício. Utilizando visão computacional e inteligência artificial, o Avali.AI permite a geração de provas personalizadas e a correção automática de respostas manuscritas, além de oferecer acesso online ao boletim dos alunos.",
-    "tecnologias": ["EC2", "ECS", "Fargate", "Lambda", "RDS", "S3", "SQS"],
+    "tecnologias": ["EC2", "ECS", "Fargate", "Lambda", "RDS", "S3", "SQS", "SNS"],
     "url": "https://lucasedson.github.io/tcc-edn/",
     "imagem": "imagens/tcc-edn.png",
   },
