@@ -1,1 +1,109 @@
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color-light: #F5F5F5;
+  --primary-text-color-light: #1A1A1A;
+  --secondary-text-color-light: #555555;
+  --card-bg-color-light: #FFFFFF;
+  --border-color-light: #E0E0E0;
+
+  --bg-color-dark: #131314;
+  --primary-text-color-dark: #E4E4E6;
+  --secondary-text-color-dark: #9B9B9F;
+  --card-bg-color-dark: #1E1F20;
+  --border-color-dark: #393A3B;
+
+  --gradient-start: #4796E3;
+  --gradient-mid: #9177C7;
+  --gradient-end: #CA6673;
+}
+
+body {
+  background-color: var(--bg-color-light);
+  color: var(--primary-text-color-light);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark body {
+  background-color: var(--bg-color-dark);
+  color: var(--primary-text-color-dark);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.gradient-bg-100 {
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+}
+ 
+.gradient-bg-10 {
+  background-color: var(--gradient-mid);
+  /* background: linear-gradient(to right, var(--gradient-start), var(--gradient-mid), var(--gradient-end)); */
+  background-blend-mode: add;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color-light);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--bg-color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--border-color-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+}
+
+.gradient-border img {
+  border-radius: 50%;
+  border: 4px solid var(--bg-color-light);
+}
+
+.dark .gradient-border img {
+  border-color: var(--bg-color-dark);
+}
