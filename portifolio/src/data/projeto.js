@@ -1,4 +1,13 @@
 export const projetosData = [
+    {
+    "id": 7,
+    "nome": "Website - HJ Fast Delivery",
+    "descricao": "Desenvolvimento de portifólio e website para a empresa HJ Fast Delivery, empresa Americana de Hot Shot Delivery, com interface multi-linguagem e responsivo utilizando Astro e Tailwind CSS.",
+    "tecnologias": ["Astro", "Tailwind CSS"],
+    "url": "https://hjfastdelivery.com/",
+    "imagem": "imagens/hjfast.png", 
+    "periodo": "05/2025 - 06/2025"
+  },
   {
     "id": 0,
     "nome": "Avali.AI – Arquitetura de Solução em Nuvem (TCC – Escola da Nuvem)",
