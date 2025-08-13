@@ -47,7 +47,7 @@ export const projetosData = [
     "nome": "API - PDV (Frente de Caixa)",
     "descricao": "Projeto de conclusão do curso na Cubos Academy, uma API robusta para um sistema de Ponto de Venda (PDV), desenvolvida com Node.js e PostgreSQL.",
     "tecnologias": ["Node.js", "PostgreSQL"],
-    "url": "https://github.com/Alexnderp/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t08",
+    "url": "https://github.com/lucasedson/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t08",
     "imagem": "imagens/api-pdv.png", 
     "periodo": "11/2023 - 12/2023"
   },
